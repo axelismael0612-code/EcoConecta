@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoConecta</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>EcoConecta 🌱</h1>
+    <p>Reutiliza, dona y conecta con tu comunidad</p>
+    <a href="publicar.html" class="btn">Publicar objetooooo</a>
+  </div>
+
+  <div class="categorias">
+    <h2>Categorías</h2>
+
+    <div class="chips">
+      <span onclick="filtrar('electronico')">📱 Electrónicos</span>
+      <span onclick="filtrar('libro')">📚 Libros</span>
+      <span onclick="filtrar('hogar')">🪑 Hogar</span>
+      <span onclick="filtrar('ropa')">👕 Ropa</span>
+      <span onclick="filtrar('Todos')">🔄 Todos</span> <!-- 🔥 CORREGIDO -->
+    </div>
+
+    <input 
+      type="text" 
+      id="buscador" 
+      placeholder="Buscar objetos..." 
+      onkeyup="buscar()"
+    >
+  </div>
+
+  <div class="contenedor">
+    <h2 class="titulo-seccion">Objetos disponibles</h2>
+    <div id="contenedor"></div>
+  </div>
+
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <img id="imgModal">
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

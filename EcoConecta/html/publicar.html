@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Publicar objeto</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+  <div class="formulario">
+    <h2>Publicar objeto</h2>
+
+    <!-- 🔥 FORM REAL -->
+    <form onsubmit="guardar(event)">
+
+      <input id="nombre" placeholder="Nombre del objeto">
+
+      <textarea id="descripcion" placeholder="Descripción"></textarea>
+
+      <select id="tipo">
+        <option value="Donación">Donación</option>
+        <option value="Venta">Venta</option>
+      </select>
+
+      <select id="categoria">
+        <option value="electronico">Electrónico</option>
+        <option value="libro">Libro</option>
+        <option value="hogar">Hogar</option>
+        <option value="ropa">Ropa</option>
+      </select>
+
+      <input type="file" id="imagen" multiple>
+
+      <!-- 🔥 IMPORTANTE -->
+      <button type="submit">Publicar</button>
+
+    </form>
+
+    <a href="index.html">← Volver</a>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

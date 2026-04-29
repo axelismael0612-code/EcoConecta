@@ -1,0 +1,227 @@
+body {
+  font-family: Arial;
+  background: #eef2f1;
+  margin: 0;
+}
+
+/* HEADER */
+.header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.header p {
+  margin: 15px 0;
+}
+
+.btn {
+  background: #4caf50;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* IMAGEN PRINCIPAL */
+.img-principal {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.img-principal:hover {
+  transform: scale(1.02);
+}
+
+/* MINIATURAS */
+.miniaturas {
+  margin-top: 10px;
+}
+
+.miniaturas img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.miniaturas img:hover {
+  transform: scale(1.1);
+}
+
+/* TEXTO */
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* BOTONES */
+.card button {
+  margin: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:first-of-type {
+  background: #c8e6c9;
+}
+
+.card button:last-of-type {
+  background: #ef5350;
+  color: white;
+}
+
+/* ========================= */
+/* MODAL (525 FIX REAL) */
+/* ========================= */
+
+.modal {
+  display: none; /* 525 ahora s525 funciona */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* ========================= */
+/* FORMULARIO */
+/* ========================= */
+
+.formulario {
+  width: 350px;
+  margin: 60px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: #43a047;
+}
+
+.formulario a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #2e7d32;
+}
+
+/* ========================= */
+/* CATEGORS */
+/* ========================= */
+
+.categorias {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.chips {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chips span {
+  background: #c8e6c9;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chips span:hover {
+  background: #a5d6a7;
+}
+
+/* BUSCADOR */
+#buscador {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 8px;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
